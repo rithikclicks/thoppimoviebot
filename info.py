@@ -19,7 +19,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', '5836710206:AAHgWixfY667DyXPm4a8ejkf-jgdctE
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
-PICS = (environ.get('PICS', 'https://i.ibb.co/gVq6X6V/images-20.jpg')).split()
+PICS = (environ.get('PICS', 'https://i.ibb.co/k0XjRbh/images-21.jpg')).split()
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6019216032').split()]
@@ -32,7 +32,7 @@ AUTH_CHANNEL = environ.get('AUTH_CHANNEL', '-1001754886821')
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://thoppimoviebot:thoppimoviebot@thoppimoviebot.a3lj0ir.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Anurag")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Anurag_files')
 
